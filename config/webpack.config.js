@@ -460,10 +460,9 @@ module.exports = function(webpackEnv) {
             //     importLoaders: 1,
             //     sourceMap: isEnvProduction && shouldUseSourceMap,
             //     modules: {
-            //       modules: "local",
-            //       localIdentName
-            //     }
-            //   })
+            //       getLocalIdent: getCSSModuleLocalIdent,
+            //     },
+            //   }),
             // },
             // Opt-in support for SASS (using .scss or .sass extensions).
             // By default we support SASS Modules with the
