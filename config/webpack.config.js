@@ -375,7 +375,7 @@ module.exports = function(webpackEnv) {
 
                 plugins: [
                   [
-                    "react-css-modules",
+                    require.resolve("react-css-modules"),
                     {
                       generateScopedName: localIdentName
                     }
