@@ -47,7 +47,7 @@ const cssRegex = /\.css$/;
 const cssModuleRegex = /\.module\.css$/;
 const sassRegex = /\.(scss|sass)$/;
 const sassModuleRegex = /\.module\.(scss|sass)$/;
-const localIdentName = "[path]___[name]__[local]___[hash:base64:5]";
+const localIdentName = "[name]__[local]__[hash:base64:5]";
 
 // This is the production and development configuration.
 // It is focused on developer experience, fast rebuilds, and a minimal bundle.
@@ -374,12 +374,6 @@ module.exports = function(webpackEnv) {
                 ),
 
                 plugins: [
-                  [
-                    require.resolve("react-css-modules"),
-                    {
-                      generateScopedName: localIdentName
-                    }
-                  ],
                   [
                     require.resolve("babel-plugin-named-asset-import"),
                     {

@@ -136,7 +136,5 @@
       "react-app"
     ]
   },
-  "devDependencies": {
-    "babel-plugin-react-css-modules": "^5.2.6"
-  }
+  "devDependencies": {}
 }
